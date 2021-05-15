@@ -1,0 +1,13 @@
+type Query {
+    seasonList: [Season!]!
+}
+
+type Mutation {
+    add(value: String!): [String]
+}
+
+type Season {
+    year: String!
+    url: String!
+    urlMobile: String!
+}
