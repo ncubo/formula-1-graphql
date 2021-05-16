@@ -1,14 +1,13 @@
-import { F1 } from "./data-source";
+import { F1 } from './data-source';
 
 export class SeasonsData extends F1 {
-    constructor(){
+    constructor() {
         super();
     }
 
-    async getSeasons(){
-        //with cache for 60 minutes
-        return await this.get('seasons.json?limit=80',{
-            cacheOptions: {ttl:60}
+    async getSeasons() {
+        return await this.get('seasons.json?limit=80', {
+            cacheOptions: { ttl: 60 }
         });
     }
 }

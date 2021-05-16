@@ -1,3 +1,1 @@
-# rest-to-api-graphql
-
-Introduce el contenido de tu README
+# 00-hello-world-graphql
